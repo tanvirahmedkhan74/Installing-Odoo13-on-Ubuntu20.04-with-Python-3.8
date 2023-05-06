@@ -1,6 +1,14 @@
 The Following instructions are compatible with Ubuntu 20.04(recommended) for Odoo 13 Community Version Installation
 Using Python 3.8.2
 
+ //////
+ For Python 3.10
+ change from collections .. to from collections.abc
+ 
+ pip3 uninstall Werkzeug  # will uninstall earlier version
+ pip3 install Werkzeug==0.11.15  # check the requirements.txt and installed that version
+ 
+ from base64 import decodebytes, encodebytes .. from base64 decodestring and encodestring
 Quick Guide:
 ******
 (<>) refers to your personal user name or folders path which varies in different command and settings
@@ -136,13 +144,13 @@ Done with the installation Phase,Now for the Setup-
 
 in the venv ,go to the odoo13 folder and run - python odoo-bin
 
+--config=/home/tanvir/PycharmProjects/Odoo13/server/server.conf -u all 
+
 Go to http://localhost:8069/ 
 
 And boom Odoo Running!
 
 #Set up the Server Configuration (Demo link - https://gist.github.com/Guidoom/d5db0a76ce669b139271a528a8a2a27f)
-
-
 
 
 
