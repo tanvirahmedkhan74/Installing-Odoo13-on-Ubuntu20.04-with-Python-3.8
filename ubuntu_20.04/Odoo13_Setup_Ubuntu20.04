@@ -1,6 +1,8 @@
 The Following instructions are compatible with Ubuntu 20.04(recommended) for Odoo 13 Community Version Installation
 Using Python 3.8.2
 
+## Managing Multiple V of Python : https://davidvn.com/2022/09/28/installing-and-managing-multiple-python-versions-on-ubuntu-22-04/
+
  //////
  For Python 3.10
  change from collections .. to from collections.abc
