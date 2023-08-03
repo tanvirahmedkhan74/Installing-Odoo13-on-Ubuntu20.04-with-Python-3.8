@@ -47,11 +47,9 @@ for python 3.8-
 sudo apt-get install python3.8 python3.8-dev python3.8-venv
 
 
-#Step 4:Python Dependencies
+#Step 4:Python Dependencies and necessary packages
 ------------------------------------------------
-sudo apt-get install virtualenv
-
-virtualenv python3-psycopg2 libpq-dev libxml2-dev libxslt-dev libxslt1-dev zlib1g-dev python3-pip libjpeg8-dev python3-ldap libldap2-dev libsasl2-dev nodejs npm node-less unzip git
+sudo apt-get install virtualenv python3-psycopg2 libpq-dev libxml2-dev libxslt-dev libxslt1-dev zlib1g-dev python3-pip libjpeg8-dev python3-ldap libldap2-dev libsasl2-dev nodejs npm node-less unzip git
 
 -----python3-ldap problem fix ------
 
@@ -106,6 +104,7 @@ sudo apt-get update
 
 sudo apt-get install wkhtmltopdf 
 
+<This is not mandatory>
 **create user for wkhtmltopdf**
 useradd -m -g sudo -s /bin/bash odoo13
 passwd odoo13
